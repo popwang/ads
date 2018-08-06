@@ -1,0 +1,422 @@
+09:23:26.732 logback [main] INFO  c.e.EnvironmentApplicationTests - Starting EnvironmentApplicationTests on BAB1601339 with PID 6064 (started by pactera in D:\Users\environment\wpweb)
+09:23:26.738 logback [main] INFO  c.e.EnvironmentApplicationTests - The following profiles are active: dev
+09:23:26.790 logback [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@353352b6: startup date [Tue Jul 24 09:23:26 CST 2018]; root of context hierarchy
+09:23:27.287 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+09:23:28.593 logback [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.baomidou.springboot.mapper*]' package. Please check your configuration.
+09:23:29.763 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9d2667ef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:23:30.633 logback [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+09:23:30.959 logback [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [init-sql/schema.sql]
+09:23:31.156 logback [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [init-sql/schema.sql] in 196 ms.
+09:23:31.465 logback [main] WARN  c.b.m.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.environment.vo.EquipmentDataVo.
+09:23:31.466 logback [main] WARN  c.b.m.mapper.AutoSqlInjector - class com.environment.vo.EquipmentDataVo ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+09:23:31.539 logback [main] WARN  c.b.m.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.environment.mypuls.entity.TEquipmentData.
+09:23:31.539 logback [main] WARN  c.b.m.mapper.AutoSqlInjector - class com.environment.mypuls.entity.TEquipmentData ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+09:23:31.647 logback [main] WARN  c.b.m.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.environment.mypuls.entity.TEquipmentInfo2.
+09:23:31.647 logback [main] WARN  c.b.m.mapper.AutoSqlInjector - class com.environment.mypuls.entity.TEquipmentInfo2 ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+09:23:31.710 logback [main] WARN  c.b.m.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.environment.mypuls.entity.TWpData2.
+09:23:31.711 logback [main] WARN  c.b.m.mapper.AutoSqlInjector - class com.environment.mypuls.entity.TWpData2 ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+09:23:31.976 logback [main] WARN  c.b.m.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.environment.mypuls.entity.TWpOrderBuffer.
+09:23:31.976 logback [main] WARN  c.b.m.mapper.AutoSqlInjector - class com.environment.mypuls.entity.TWpOrderBuffer ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+09:23:33.365 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Equipment_data/selectEquipmentData4Chart.htm]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.environment.contrller.Equipment_dataContrller.selectEquipmentData4Chart(java.lang.String,java.lang.Integer)
+09:23:33.372 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Equipment_data/selectEquipmentData.htm]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.environment.contrller.Equipment_dataContrller.selectEquipmentData(int,int,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+09:23:33.372 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Equipment_data/exportEquipmentData.htm]}" onto public void com.environment.contrller.Equipment_dataContrller.exportEquipmentData(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+09:23:33.373 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Equipment_data/exportTag]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.environment.contrller.BaseTOAction.exportTag(javax.servlet.http.HttpServletRequest)
+09:23:33.378 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Equipment_info2/getEquipmentinfo2.htm]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.environment.contrller.Equipment_inif2Contrller.getEquipmentinfo2(java.lang.String)
+09:23:33.378 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Equipment_info2/updateEquipmentinfo2.htm]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.environment.contrller.Equipment_inif2Contrller.updateEquipmentinfo2(java.lang.String)
+09:23:33.379 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Equipment_info2/exportTag]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.environment.contrller.BaseTOAction.exportTag(javax.servlet.http.HttpServletRequest)
+09:23:33.403 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index.htm]}" onto public org.springframework.web.servlet.ModelAndView com.environment.contrller.Index.index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+09:23:33.403 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main.htm]}" onto public org.springframework.web.servlet.ModelAndView com.environment.contrller.Index.main()
+09:23:33.411 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workbench/add.htm]}" onto public org.springframework.web.servlet.ModelAndView com.environment.contrller.Index.add(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+09:23:33.413 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login.htm]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.environment.contrller.Index.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+09:23:33.414 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/quit.htm]}" onto public org.springframework.web.servlet.ModelAndView com.environment.contrller.Index.quit()
+09:23:33.415 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/baidumap/index.htm]}" onto public org.springframework.web.servlet.ModelAndView com.environment.contrller.Index.baidumapindex(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+09:23:33.415 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/baidumap/line.htm]}" onto public org.springframework.web.servlet.ModelAndView com.environment.contrller.Index.baidumapline(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+09:23:33.416 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/eqdateselect/index.htm]}" onto public org.springframework.web.servlet.ModelAndView com.environment.contrller.Index.eqdateselect(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+09:23:33.416 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workbench/index.htm]}" onto public org.springframework.web.servlet.ModelAndView com.environment.contrller.Index.workbench(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+09:23:33.417 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/exportTag]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.environment.contrller.BaseTOAction.exportTag(javax.servlet.http.HttpServletRequest)
+09:23:33.420 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/server/getEnvironmentData]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.environment.contrller.ServerController.getEnvironmentData(java.lang.String)
+09:23:33.421 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/server/getEnvironmentData2]}" onto public java.lang.String com.environment.contrller.ServerController.getEnvironmentData2(java.lang.String)
+09:23:33.423 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/server/exportTag]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.environment.contrller.BaseTOAction.exportTag(javax.servlet.http.HttpServletRequest)
+09:23:33.428 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wp/oneDatas]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.environment.contrller.WpController.oneData2Handler(java.lang.String)
+09:23:33.429 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wp/command]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.environment.contrller.WpController.offonHandler(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+09:23:33.430 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wp/allData2]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.environment.contrller.WpController.allData2Handler()
+09:23:33.430 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wp/state]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.environment.contrller.WpController.stateHandler(java.lang.String)
+09:23:33.434 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+09:23:33.441 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+09:23:33.444 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+09:23:33.444 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+09:23:33.453 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+09:23:33.455 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+09:23:34.752 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@353352b6: startup date [Tue Jul 24 09:23:26 CST 2018]; root of context hierarchy
+09:23:34.868 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+09:23:34.898 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:23:34.899 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:23:34.982 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:23:35.503 logback [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+09:23:35.984 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+09:23:36.023 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+09:23:36.037 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+09:23:36.057 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method exportEquipmentData was equipment_datacontrller
+09:23:36.061 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: exportEquipmentData belongs to groups: [[ResourceGroup{groupName='equipment_datacontrller', position=0, controller=com.environment.contrller.Equipment_dataContrller}]] 
+09:23:36.064 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData was equipment_datacontrller
+09:23:36.065 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: selectEquipmentData belongs to groups: [[ResourceGroup{groupName='equipment_datacontrller', position=0, controller=com.environment.contrller.Equipment_dataContrller}]] 
+09:23:36.067 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData4Chart was equipment_datacontrller
+09:23:36.070 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: selectEquipmentData4Chart belongs to groups: [[ResourceGroup{groupName='equipment_datacontrller', position=0, controller=com.environment.contrller.Equipment_dataContrller}]] 
+09:23:36.074 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.075 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEquipmentinfo2 belongs to groups: [[ResourceGroup{groupName='equipmentinfo2contrller', position=0, controller=com.environment.contrller.Equipment_inif2Contrller}]] 
+09:23:36.075 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.076 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: updateEquipmentinfo2 belongs to groups: [[ResourceGroup{groupName='equipmentinfo2contrller', position=0, controller=com.environment.contrller.Equipment_inif2Contrller}]] 
+09:23:36.077 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapindex was index
+09:23:36.078 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: baidumapindex belongs to groups: [[ResourceGroup{groupName='index', position=0, controller=com.environment.contrller.Index}]] 
+09:23:36.082 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapline was index
+09:23:36.082 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: baidumapline belongs to groups: [[ResourceGroup{groupName='index', position=0, controller=com.environment.contrller.Index}]] 
+09:23:36.083 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method eqdateselect was index
+09:23:36.084 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: eqdateselect belongs to groups: [[ResourceGroup{groupName='index', position=0, controller=com.environment.contrller.Index}]] 
+09:23:36.085 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was index
+09:23:36.085 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: index belongs to groups: [[ResourceGroup{groupName='index', position=0, controller=com.environment.contrller.Index}]] 
+09:23:36.086 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was index
+09:23:36.086 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: login belongs to groups: [[ResourceGroup{groupName='index', position=0, controller=com.environment.contrller.Index}]] 
+09:23:36.086 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method main was index
+09:23:36.087 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: main belongs to groups: [[ResourceGroup{groupName='index', position=0, controller=com.environment.contrller.Index}]] 
+09:23:36.087 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method quit was index
+09:23:36.087 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: quit belongs to groups: [[ResourceGroup{groupName='index', position=0, controller=com.environment.contrller.Index}]] 
+09:23:36.088 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method add was index
+09:23:36.088 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: add belongs to groups: [[ResourceGroup{groupName='index', position=0, controller=com.environment.contrller.Index}]] 
+09:23:36.089 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method workbench was index
+09:23:36.089 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: workbench belongs to groups: [[ResourceGroup{groupName='index', position=0, controller=com.environment.contrller.Index}]] 
+09:23:36.098 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/equipment_datacontrller Description: equipment_datacontrller Position: 0
+09:23:36.101 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/index Description: index Position: 0
+09:23:36.101 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/equipmentinfo2contrller Description: equipmentinfo2contrller Position: 0
+09:23:36.150 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Void(true)
+09:23:36.150 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.Void(true)
+09:23:36.165 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Void(true)
+09:23:36.166 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+09:23:36.181 logback [main] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /Equipment_data/exportEquipmentData.htm.com.environment.contrller.Equipment_dataContrller.exportEquipmentData.DefaultGenericTypeNamingStrategy
+09:23:36.181 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /Equipment_data/exportEquipmentData.htm.com.environment.contrller.Equipment_dataContrller.exportEquipmentData.DefaultGenericTypeNamingStrategy
+09:23:36.209 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method exportEquipmentData was equipment_datacontrller
+09:23:36.258 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method exportEquipmentData was equipment_datacontrller
+09:23:36.269 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method exportEquipmentData was equipment_datacontrller
+09:23:36.271 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method exportEquipmentData was equipment_datacontrller
+09:23:36.275 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method exportEquipmentData was equipment_datacontrller
+09:23:36.276 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method exportEquipmentData was equipment_datacontrller
+09:23:36.279 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method exportEquipmentData was equipment_datacontrller
+09:23:36.281 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method exportEquipmentData was equipment_datacontrller
+09:23:36.292 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method exportEquipmentData was equipment_datacontrller
+09:23:36.293 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method exportEquipmentData was equipment_datacontrller
+09:23:36.301 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method exportEquipmentData was equipment_datacontrller
+09:23:36.303 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method exportEquipmentData was equipment_datacontrller
+09:23:36.308 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method exportEquipmentData was equipment_datacontrller
+09:23:36.316 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method exportEquipmentData was equipment_datacontrller
+09:23:36.320 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method exportEquipmentData was equipment_datacontrller
+09:23:36.322 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method exportEquipmentData was equipment_datacontrller
+09:23:36.332 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Object(true)
+09:23:36.333 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.Object(true)
+09:23:36.333 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Object(true)
+09:23:36.333 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.Object(true)
+09:23:36.334 logback [main] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /Equipment_data/selectEquipmentData.htm.com.environment.contrller.Equipment_dataContrller.selectEquipmentData.DefaultGenericTypeNamingStrategy
+09:23:36.335 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /Equipment_data/selectEquipmentData.htm.com.environment.contrller.Equipment_dataContrller.selectEquipmentData.DefaultGenericTypeNamingStrategy
+09:23:36.349 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData was equipment_datacontrller
+09:23:36.355 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData was equipment_datacontrller
+09:23:36.361 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData was equipment_datacontrller
+09:23:36.364 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData was equipment_datacontrller
+09:23:36.369 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData was equipment_datacontrller
+09:23:36.373 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData was equipment_datacontrller
+09:23:36.385 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData was equipment_datacontrller
+09:23:36.387 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData was equipment_datacontrller
+09:23:36.393 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData was equipment_datacontrller
+09:23:36.398 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData was equipment_datacontrller
+09:23:36.407 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData was equipment_datacontrller
+09:23:36.407 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData was equipment_datacontrller
+09:23:36.415 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData was equipment_datacontrller
+09:23:36.417 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData was equipment_datacontrller
+09:23:36.429 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData was equipment_datacontrller
+09:23:36.431 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData was equipment_datacontrller
+09:23:36.437 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Object(true)
+09:23:36.437 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.Object(true)
+09:23:36.438 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Object(true)
+09:23:36.438 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.Object(true)
+09:23:36.438 logback [main] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /Equipment_data/selectEquipmentData4Chart.htm.com.environment.contrller.Equipment_dataContrller.selectEquipmentData4Chart.DefaultGenericTypeNamingStrategy
+09:23:36.438 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /Equipment_data/selectEquipmentData4Chart.htm.com.environment.contrller.Equipment_dataContrller.selectEquipmentData4Chart.DefaultGenericTypeNamingStrategy
+09:23:36.443 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData4Chart was equipment_datacontrller
+09:23:36.446 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData4Chart was equipment_datacontrller
+09:23:36.454 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData4Chart was equipment_datacontrller
+09:23:36.457 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData4Chart was equipment_datacontrller
+09:23:36.464 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData4Chart was equipment_datacontrller
+09:23:36.465 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData4Chart was equipment_datacontrller
+09:23:36.469 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData4Chart was equipment_datacontrller
+09:23:36.474 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData4Chart was equipment_datacontrller
+09:23:36.477 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData4Chart was equipment_datacontrller
+09:23:36.479 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData4Chart was equipment_datacontrller
+09:23:36.483 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData4Chart was equipment_datacontrller
+09:23:36.484 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData4Chart was equipment_datacontrller
+09:23:36.490 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData4Chart was equipment_datacontrller
+09:23:36.490 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData4Chart was equipment_datacontrller
+09:23:36.494 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData4Chart was equipment_datacontrller
+09:23:36.495 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method selectEquipmentData4Chart was equipment_datacontrller
+09:23:36.501 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Object(true)
+09:23:36.501 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.Object(true)
+09:23:36.501 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Object(true)
+09:23:36.504 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.Object(true)
+09:23:36.505 logback [main] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /Equipment_info2/getEquipmentinfo2.htm.com.environment.contrller.Equipment_inif2Contrller.getEquipmentinfo2.DefaultGenericTypeNamingStrategy
+09:23:36.505 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /Equipment_info2/getEquipmentinfo2.htm.com.environment.contrller.Equipment_inif2Contrller.getEquipmentinfo2.DefaultGenericTypeNamingStrategy
+09:23:36.505 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.507 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.510 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.511 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.513 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.514 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.524 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.525 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.535 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.536 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.539 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.540 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.549 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.552 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.557 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.559 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.563 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Object(true)
+09:23:36.563 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.Object(true)
+09:23:36.563 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Object(true)
+09:23:36.563 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.Object(true)
+09:23:36.565 logback [main] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /Equipment_info2/updateEquipmentinfo2.htm.com.environment.contrller.Equipment_inif2Contrller.updateEquipmentinfo2.DefaultGenericTypeNamingStrategy
+09:23:36.565 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /Equipment_info2/updateEquipmentinfo2.htm.com.environment.contrller.Equipment_inif2Contrller.updateEquipmentinfo2.DefaultGenericTypeNamingStrategy
+09:23:36.567 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.568 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.570 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.573 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.582 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.586 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.588 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.589 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.591 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.592 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.594 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.595 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.600 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.603 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.605 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.606 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEquipmentinfo2 was equipmentinfo2contrller
+09:23:36.609 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+09:23:36.609 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key org.springframework.web.servlet.ModelAndView(true)
+09:23:36.615 logback [main] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: org.springframework.web.servlet.ModelAndView(true)
+09:23:36.615 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.ModelAndView(true)
+09:23:36.668 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+09:23:36.668 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key org.springframework.web.servlet.ModelAndView(true)
+09:23:36.669 logback [main] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: org.springframework.web.servlet.ModelAndView(true)
+09:23:36.669 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.ModelAndView(true)
+09:23:36.671 logback [main] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: org.springframework.web.servlet.View(true)
+09:23:36.672 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+09:23:36.673 logback [main] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: org.springframework.web.servlet.View(true)
+09:23:36.674 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+09:23:36.674 logback [main] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /workbench/add.htm.com.environment.contrller.Index.add.DefaultGenericTypeNamingStrategy
+09:23:36.675 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /workbench/add.htm.com.environment.contrller.Index.add.DefaultGenericTypeNamingStrategy
+09:23:36.676 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method add was index
+09:23:36.677 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method add was index
+09:23:36.678 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method add was index
+09:23:36.679 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method add was index
+09:23:36.682 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method add was index
+09:23:36.683 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method add was index
+09:23:36.683 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method add was index
+09:23:36.686 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method add was index
+09:23:36.690 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method add was index
+09:23:36.693 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method add was index
+09:23:36.703 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method add was index
+09:23:36.706 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method add was index
+09:23:36.708 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method add was index
+09:23:36.715 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method add was index
+09:23:36.716 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method add was index
+09:23:36.718 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method add was index
+09:23:36.720 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+09:23:36.720 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key org.springframework.web.servlet.ModelAndView(true)
+09:23:36.720 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+09:23:36.720 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key org.springframework.web.servlet.ModelAndView(true)
+09:23:36.721 logback [main] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: org.springframework.web.servlet.View(true)
+09:23:36.721 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+09:23:36.726 logback [main] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /baidumap/index.htm.com.environment.contrller.Index.baidumapindex.DefaultGenericTypeNamingStrategy
+09:23:36.726 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /baidumap/index.htm.com.environment.contrller.Index.baidumapindex.DefaultGenericTypeNamingStrategy
+09:23:36.727 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapindex was index
+09:23:36.728 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapindex was index
+09:23:36.731 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapindex was index
+09:23:36.732 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapindex was index
+09:23:36.735 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapindex was index
+09:23:36.736 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapindex was index
+09:23:36.742 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapindex was index
+09:23:36.745 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapindex was index
+09:23:36.750 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapindex was index
+09:23:36.758 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapindex was index
+09:23:36.760 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapindex was index
+09:23:36.761 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapindex was index
+09:23:36.767 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapindex was index
+09:23:36.769 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapindex was index
+09:23:36.772 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapindex was index
+09:23:36.773 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapindex was index
+09:23:36.775 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+09:23:36.775 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key org.springframework.web.servlet.ModelAndView(true)
+09:23:36.776 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+09:23:36.777 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key org.springframework.web.servlet.ModelAndView(true)
+09:23:36.777 logback [main] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: org.springframework.web.servlet.View(true)
+09:23:36.777 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+09:23:36.777 logback [main] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /baidumap/line.htm.com.environment.contrller.Index.baidumapline.DefaultGenericTypeNamingStrategy
+09:23:36.777 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /baidumap/line.htm.com.environment.contrller.Index.baidumapline.DefaultGenericTypeNamingStrategy
+09:23:36.778 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapline was index
+09:23:36.786 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapline was index
+09:23:36.787 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapline was index
+09:23:36.791 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapline was index
+09:23:36.795 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapline was index
+09:23:36.805 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapline was index
+09:23:36.809 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapline was index
+09:23:36.813 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapline was index
+09:23:36.815 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapline was index
+09:23:36.816 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapline was index
+09:23:36.817 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapline was index
+09:23:36.818 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapline was index
+09:23:36.822 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapline was index
+09:23:36.829 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapline was index
+09:23:36.830 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapline was index
+09:23:36.833 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method baidumapline was index
+09:23:36.835 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+09:23:36.836 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key org.springframework.web.servlet.ModelAndView(true)
+09:23:36.836 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+09:23:36.836 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key org.springframework.web.servlet.ModelAndView(true)
+09:23:36.840 logback [main] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: org.springframework.web.servlet.View(true)
+09:23:36.840 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+09:23:36.841 logback [main] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /eqdateselect/index.htm.com.environment.contrller.Index.eqdateselect.DefaultGenericTypeNamingStrategy
+09:23:36.841 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /eqdateselect/index.htm.com.environment.contrller.Index.eqdateselect.DefaultGenericTypeNamingStrategy
+09:23:36.842 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method eqdateselect was index
+09:23:36.842 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method eqdateselect was index
+09:23:36.850 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method eqdateselect was index
+09:23:36.854 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method eqdateselect was index
+09:23:36.855 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method eqdateselect was index
+09:23:36.856 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method eqdateselect was index
+09:23:36.857 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method eqdateselect was index
+09:23:36.857 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method eqdateselect was index
+09:23:36.860 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method eqdateselect was index
+09:23:36.860 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method eqdateselect was index
+09:23:36.860 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method eqdateselect was index
+09:23:36.863 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method eqdateselect was index
+09:23:36.870 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method eqdateselect was index
+09:23:36.875 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method eqdateselect was index
+09:23:36.879 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method eqdateselect was index
+09:23:36.880 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method eqdateselect was index
+09:23:36.882 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+09:23:36.882 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key org.springframework.web.servlet.ModelAndView(true)
+09:23:36.882 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+09:23:36.882 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key org.springframework.web.servlet.ModelAndView(true)
+09:23:36.885 logback [main] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: org.springframework.web.servlet.View(true)
+09:23:36.885 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+09:23:36.889 logback [main] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /index.htm.com.environment.contrller.Index.index.DefaultGenericTypeNamingStrategy
+09:23:36.889 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /index.htm.com.environment.contrller.Index.index.DefaultGenericTypeNamingStrategy
+09:23:36.890 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was index
+09:23:36.892 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was index
+09:23:36.894 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was index
+09:23:36.896 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was index
+09:23:36.897 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was index
+09:23:36.898 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was index
+09:23:36.900 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was index
+09:23:36.903 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was index
+09:23:36.905 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was index
+09:23:36.906 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was index
+09:23:36.907 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was index
+09:23:36.908 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was index
+09:23:36.909 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was index
+09:23:36.914 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was index
+09:23:36.915 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was index
+09:23:36.916 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was index
+09:23:36.917 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Object(true)
+09:23:36.917 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.Object(true)
+09:23:36.920 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Object(true)
+09:23:36.920 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.Object(true)
+09:23:36.920 logback [main] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /login.htm.com.environment.contrller.Index.login.DefaultGenericTypeNamingStrategy
+09:23:36.920 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /login.htm.com.environment.contrller.Index.login.DefaultGenericTypeNamingStrategy
+09:23:36.923 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was index
+09:23:36.928 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was index
+09:23:36.931 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was index
+09:23:36.932 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was index
+09:23:36.935 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was index
+09:23:36.936 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was index
+09:23:36.938 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was index
+09:23:36.938 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was index
+09:23:36.940 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was index
+09:23:36.942 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was index
+09:23:36.945 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was index
+09:23:36.946 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was index
+09:23:36.949 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was index
+09:23:36.953 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was index
+09:23:36.957 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was index
+09:23:36.959 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was index
+09:23:36.960 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+09:23:36.961 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key org.springframework.web.servlet.ModelAndView(true)
+09:23:36.961 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+09:23:36.961 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key org.springframework.web.servlet.ModelAndView(true)
+09:23:36.961 logback [main] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: org.springframework.web.servlet.View(true)
+09:23:36.961 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+09:23:36.964 logback [main] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /main.htm.com.environment.contrller.Index.main.DefaultGenericTypeNamingStrategy
+09:23:36.964 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /main.htm.com.environment.contrller.Index.main.DefaultGenericTypeNamingStrategy
+09:23:36.965 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method main was index
+09:23:36.965 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method main was index
+09:23:36.965 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method main was index
+09:23:36.967 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method main was index
+09:23:36.968 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method main was index
+09:23:36.968 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method main was index
+09:23:36.970 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method main was index
+09:23:36.970 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method main was index
+09:23:36.970 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method main was index
+09:23:36.973 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method main was index
+09:23:36.973 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method main was index
+09:23:36.973 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method main was index
+09:23:36.974 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method main was index
+09:23:36.975 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method main was index
+09:23:36.976 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method main was index
+09:23:36.977 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method main was index
+09:23:36.977 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+09:23:36.977 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key org.springframework.web.servlet.ModelAndView(true)
+09:23:36.979 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+09:23:36.979 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key org.springframework.web.servlet.ModelAndView(true)
+09:23:36.980 logback [main] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: org.springframework.web.servlet.View(true)
+09:23:36.980 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+09:23:36.980 logback [main] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /quit.htm.com.environment.contrller.Index.quit.DefaultGenericTypeNamingStrategy
+09:23:36.980 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /quit.htm.com.environment.contrller.Index.quit.DefaultGenericTypeNamingStrategy
+09:23:36.980 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method quit was index
+09:23:36.981 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method quit was index
+09:23:36.981 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method quit was index
+09:23:36.981 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method quit was index
+09:23:36.983 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method quit was index
+09:23:36.984 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method quit was index
+09:23:36.984 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method quit was index
+09:23:36.986 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method quit was index
+09:23:36.987 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method quit was index
+09:23:36.988 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method quit was index
+09:23:36.989 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method quit was index
+09:23:36.990 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method quit was index
+09:23:36.990 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method quit was index
+09:23:36.990 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method quit was index
+09:23:36.992 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method quit was index
+09:23:36.994 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method quit was index
+09:23:36.994 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+09:23:36.994 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key org.springframework.web.servlet.ModelAndView(true)
+09:23:36.994 logback [main] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+09:23:36.995 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key org.springframework.web.servlet.ModelAndView(true)
+09:23:36.995 logback [main] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: org.springframework.web.servlet.View(true)
+09:23:36.995 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+09:23:36.996 logback [main] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /workbench/index.htm.com.environment.contrller.Index.workbench.DefaultGenericTypeNamingStrategy
+09:23:36.996 logback [main] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /workbench/index.htm.com.environment.contrller.Index.workbench.DefaultGenericTypeNamingStrategy
+09:23:36.997 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method workbench was index
+09:23:36.998 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method workbench was index
+09:23:37.000 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method workbench was index
+09:23:37.001 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method workbench was index
+09:23:37.002 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method workbench was index
+09:23:37.003 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method workbench was index
+09:23:37.004 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method workbench was index
+09:23:37.005 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method workbench was index
+09:23:37.005 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method workbench was index
+09:23:37.005 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method workbench was index
+09:23:37.007 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method workbench was index
+09:23:37.008 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method workbench was index
+09:23:37.008 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method workbench was index
+09:23:37.008 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method workbench was index
+09:23:37.010 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method workbench was index
+09:23:37.010 logback [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method workbench was index
+09:23:37.101 logback [main] INFO  c.e.EnvironmentApplicationTests - Started EnvironmentApplicationTests in 11.1 seconds (JVM running for 13.577)
+09:23:37.235 logback [Thread-2] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@353352b6: startup date [Tue Jul 24 09:23:26 CST 2018]; root of context hierarchy
+09:23:37.260 logback [Thread-2] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
