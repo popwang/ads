@@ -3,7 +3,7 @@
 <mapper namespace="com.environment.mypuls.mapper.UserMapper">
 
 	<select id="selectUserOnLogin" resultType="com.environment.mypuls.entity.TUserInfo" parameterType="string">
-		select i_user_id,v_user_name,v_password,dtm_create,i_admin
+		select i_user_id,v_user_name,v_password,dtm_create,i_admin,v_display_name
 		from t_user_info where v_user_name=#{userName} and v_password=#{password} 
   	</select>
 </mapper>

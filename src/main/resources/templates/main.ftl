@@ -28,9 +28,22 @@
             </div>
             <div class="sidebar-collapse">
                 <ul class="nav" id="side-menu">
-                    <li class="nav-header">
-                        <div><h3><strong>在线扬尘检测系统</strong></h3></div>
-                        <div class="logo-element">环保</div>
+                  <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <span><img alt="image" class="img-circle" src="img/profile_small.jpg" /></span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear">
+                                <span class="text-muted text-xs block">${user.vDisplayName!user.vUserName },您好！<b class="caret"></b></span>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li class="divider"></li>
+                                <li><a href="quit.htm">安全退出</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">环保
+                        </div>
                     </li>
                   <li>
                 	  <a class="J_menuItem" href="workbench/index.htm"><i class="fa fa-columns"></i> <span class="nav-label" style="color:#cdd6ec;">工作台</span></a>

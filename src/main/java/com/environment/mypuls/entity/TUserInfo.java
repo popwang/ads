@@ -9,14 +9,6 @@ import com.baomidou.mybatisplus.enums.IdType;
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
 
-/**
- * <p>
- * 
- * </p>
- *
- * @author niuchen
- * @since 2017-10-25
- */
 @TableName("t_user_info")
 public class TUserInfo extends Model<TUserInfo> {
 
@@ -47,7 +39,20 @@ public class TUserInfo extends Model<TUserInfo> {
      */
 	@TableField("i_admin")
 	private Integer iAdmin;
+	
+	/**
+	 * 显示名称
+	 */
+	@TableField("v_display_name")
+	private String vDisplayName;
 
+	public String getvDisplayName() {
+		return vDisplayName;
+	}
+
+	public void setvDisplayName(String vDisplayName) {
+		this.vDisplayName = vDisplayName;
+	}
 
 	public Integer getiUserId() {
 		return iUserId;

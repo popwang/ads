@@ -62,6 +62,7 @@ public class Index extends BaseTOAction {
 	@ApiOperation(value = "进入工作页")
 	public ModelAndView main() {
 		ModelAndView mv = new ModelAndView();
+		mv.addObject("user", request.getSession().getAttribute("sys_user_key"));
 		mv.setViewName("main");
 		return mv;
 	}

@@ -87,9 +87,13 @@
 						<td>联系电话：</td>
 						<td id="phone"></td>
 					</tr>
+					<tr>
+						<td>经|纬度：</td>
+						<td id="jwd"></td>
+					</tr>
 				</table>
 				<div style="float: right;">
-					<span><button class="btn btn-info"
+					<span><button class="btn btn-info btn-sm"
 							onclick="modifyProjectInfo();">修改</button></span>
 				</div>
 			</div>
@@ -349,6 +353,7 @@ function loadEquipmentInfo(objdata){
     $("#address").html(objdata.vAddress==''?"空数据":objdata.vAddress);
     $("#company").html(objdata.vCompany==''?"空数据":objdata.vCompany);
     $("#phone").html(objdata.vPhone==''?"空数据":objdata.vPhone);
+    $("#jwd").html(objdata.nLongitudeBd==''?"空数据":objdata.nLongitudeBd+"|"+objdata.nLatitudeBd)
 }
 /**
  * 加载柱图数据
