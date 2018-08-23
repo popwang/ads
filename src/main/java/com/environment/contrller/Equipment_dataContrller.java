@@ -86,7 +86,7 @@ public class Equipment_dataContrller extends BaseTOAction {
 
 	@RequestMapping("exportEquipmentData.htm")
 	@ApiOperation(value = "设备历史数据 导出")
-	public void exportEquipmentData(String date, HttpServletRequest request, HttpServletResponse response) {
+	public void exportEquipmentData(String date, HttpServletRequest request, String equipmentname,HttpServletResponse response) {
 		CSVWriter csv = null;
 		HttpSession session = request.getSession();
 		try {
@@ -117,6 +117,7 @@ public class Equipment_dataContrller extends BaseTOAction {
 			Map<String,Object> params = new HashMap<String,Object>();
 			params.put("start", datezu[0].replaceAll("/", "-")+" 00:00:00");
 			params.put("end", datezu[1].replaceAll("/", "-")+ " 23:59:59");
+			params.put("equipmentname", equipmentname);
 			List<TEquipmentData> te = TEquipmentDataMapper.selectEquipmentData(params);
 			int i = 0;
 			for (TEquipmentData eq : te) {
