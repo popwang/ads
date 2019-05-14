@@ -13,9 +13,17 @@ import java.util.Map;
  */
 public interface DataServerMapper extends BaseMapper<EquipmentDataVo> {
 	/**
-	 * 数据接口查询方法
+	 * 实时数据接口查询方法
 	 * @param map
 	 * @return
 	 */
 	List<EquipmentDataVo> getEnvironmentData(Map<String,Object> map);
+	
+	/**
+	 * 区间数据接口查询方法
+	 * @param map
+	 * @return
+	 */
+	List<EquipmentDataVo> getEnvironmentDataDual(Map<String,Object> map);
+	
 }

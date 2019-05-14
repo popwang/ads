@@ -2,6 +2,9 @@ package com.environment.contrller;
 
 import com.environment.mypuls.entity.TEquipmentInfo2;
 import com.environment.mypuls.service.ITEquipmentInfo2Service;
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
+
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,6 +46,30 @@ public class Equipment_inif2Contrller extends BaseTOAction {
 		map.put("list", telsit);
 		map.put("msg", "true");
 		System.out.println(map);
+		return map;
+	}
+	
+	@RequestMapping("getEquipmentinfo2ForTable.htm")
+	@ResponseBody
+	@ApiOperation(value = "查询设备基础信息关联查询最新的一条上报数据，加载表格专用")
+	public Map<String, Object> getEquipmentinfo2ForTable(int offset, int limit,String v_equipment_name) {
+		Map<String, Object> map = new HashMap<String, Object>();
+		
+		Integer pageNum = (offset / limit) + 1;
+		Integer pageSize = limit;// 每页显示的数量
+		Page<?> page = PageHelper.startPage(pageNum, pageSize, true);
+		
+		String i_user_id = this.request.getSession().getAttribute("_i_user_id").toString();
+		if (v_equipment_name != null && !"".equals(v_equipment_name)) {
+			map.put("v_equipment_name", v_equipment_name);
+		}
+		if (i_user_id != null && !"".equals(i_user_id)) {
+			map.put("i_user_id", i_user_id);
+		}
+		List<TEquipmentInfo2> telsit = itEquipmentInfoService.getTEquipmentInfo(map);
+		map.clear();
+		map.put("rows", telsit);
+		map.put("total", page.getTotal());
 		return map;
 	}
 	

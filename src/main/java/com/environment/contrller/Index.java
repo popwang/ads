@@ -60,10 +60,21 @@ public class Index extends BaseTOAction {
 
 	@RequestMapping("/main.htm")
 	@ApiOperation(value = "进入工作页")
-	public ModelAndView main() {
+	public ModelAndView main(HttpServletRequest request) {
 		ModelAndView mv = new ModelAndView();
-		mv.addObject("user", request.getSession().getAttribute("sys_user_key"));
 		mv.setViewName("main");
+		mv.addObject("user", request.getSession().getAttribute("sys_user_key"));
+		return mv;
+	}
+	
+	@RequestMapping("/view.htm")
+	@ApiOperation(value = "进入设备总览")
+	public ModelAndView view() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("/workbench/view");
+		Map<String,Object> map = new HashMap<String,Object>();
+		map.put("basepath", this.getBasepath());
+		mv.addAllObjects(map);
 		return mv;
 	}
 
@@ -89,7 +100,7 @@ public class Index extends BaseTOAction {
 	}
 	
 	@RequestMapping("/baidumap/line.htm")
-	@ApiOperation(value = "进入地图")
+	@ApiOperation(value = "进入折线地图")
 	public ModelAndView baidumapline(HttpServletRequest request, HttpServletResponse response) {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("/baidumap/linemap");

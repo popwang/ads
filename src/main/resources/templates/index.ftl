@@ -26,147 +26,14 @@
 
     </script><script src="login/angular-animate.js">
 
-</script><link href="login/toaster.css" rel="stylesheet"><style type="text/css">#kf-content-div a,
-#kf-content-div p {
-    border: 0px !important;
-    padding: 0px !important;
-    margin: 0px !important;
-}
-
-#kf-wiki-div a:hover,
-#kf-content-div a:focus {
-    text-decoration: none !important;
-}
-
-#kf-wiki-div a {
-    text-decoration: none !important;
-    color: #0645AD !important;
-    background: none repeat scroll 0% 0% transparent !important;
-}
-
-#kf-wiki-div dt {
-    margin-bottom: 0.1em !important;
-    font-weight: bold !important;
-}
-
-#kf-wiki-div dd {
-    margin-left: 1.6em !important;
-    margin-bottom: 0.1em !important;
-}
-
-/**************/
-#kf-my-add-btn {
-    display: none;
-    height: 18px;
-    width: 18px;
-    position: fixed;
-    z-index: 2147483647;
-    line-height: 18px;
-    text-decoration: none;
-    font: bold 12px/25px Arial;
-    color: rgba(62, 87, 6, 0.53);
-    background: -moz-linear-gradient(center top, rgba(165, 205, 78, 1) 0%, rgba(107, 143, 26, 1) 100%);
-    opacity: 0.55;
-    text-shadow: 1px 1px 1px rgba(255, 255, 255, .22);
-    border-radius: 18px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, .29), inset 1px 1px 1px rgba(255, 255, 255, .44);
-    transition: all 0.15s ease;
-}
-
-#kf-my-add-btn {
-    color: rgba(62, 87, 6, 0.53);
-    opacity: 0.55;
-}
-
-#kf-my-add-btn:hover {
-    color: rgba(62, 87, 6, 1);
-    opacity: 1;
-}
-
-#kf-add-loading-img {
-    display: none;
-    height: 24px;
-    width: 24px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 2147483647;
-    border-radius: 24px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.29), 1px 1px 1px rgba(255, 255, 255, 0.24) inset;
-}
-
-#kf-content-div {
-    opacity: 0;
-    display: none;
-    width: 320px;
-    position: fixed;
-    right: 20px;
-    bottom: -190px;
-    z-index: 2147483647;
-    font: normal 12px/25px Arial, sans-serif;
-    color: #222;
-    background: transparent;
-}
-
-#kf-top-div {
-    height: 40px;
-    width: 320px;
-    background: rgba(0, 0, 0, .05);
-    border-radius: 20px 20px 0px 0px;
-    line-height: 40px;
-    text-align: center;
-}
-
-#kf-wiki-tab {
-    width: 160px;
-    color: rgba(255, 255, 255, .88);
-    text-decoration: none;
-    background: rgba(0, 152, 249, .6);
-    float: left;
-    font-size: 1em;
-    border-radius: 20px 20px 0px 0px;
-}
-
-#kf-translator-tab {
-    width: 160px;
-    color: rgba(0, 0, 0, 0.25);
-    text-decoration: none;
-    background: transparent;
-    font-size: 1em;
-    float: left;
-    border-radius: 20px 20px 0px 0px;
-}
-
-#kf-frame-div {
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.33);
-    text-align: left;
-}
-
-#kf-trans-div{
-    font-weight: bold;width:300px;height:auto;background:rgba(233, 233, 233, 1);opacity:.8;padding:10px;max-height:190px;overflow:auto;
-}
-
-#kf-wiki-div {
-    width: 300px;
-    max-height: 190px;
-    padding: 10px;
-    background: #E9E9E9;
-    opacity: 0.8;
-    border: 0px;
-    overflow: auto;
-}
-
-/*******/
-.tipso_bubble,.tipso_bubble>.tipso_arrow{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.tipso_bubble{position:absolute;text-align:center;border-radius:6px;z-index:9999;padding:10px}.tipso_style{cursor:help;border-bottom:1px dotted}.tipso_bubble>.tipso_arrow{position:absolute;width:0;height:0;border:8px solid;pointer-events:none}.tipso_bubble.top>.tipso_arrow{border-color:#000 transparent transparent;top:100%;left:50%;margin-left:-8px}.tipso_bubble.bottom>.tipso_arrow{border-color:transparent transparent #000;bottom:100%;left:50%;margin-left:-8px}.tipso_bubble.left>.tipso_arrow{border-color:transparent transparent transparent #000;top:50%;left:100%;margin-top:-8px}.tipso_bubble.right>.tipso_arrow{border-color:transparent #000 transparent transparent;top:50%;right:100%;margin-top:-8px}</style></head>
-
-
-
+</script><link href="login/toaster.css" rel="stylesheet"><style type="text/css">
+</style></head>
 <body id="body" ng-app="myApp" ng-controller="myCtrl" style="height: 636px;" class="ng-scope">
 <div align="center">
     <div id="toast-container" ng-class="[config.position, config.animation]" class="ng-scope toast-top-right"><!-- ngRepeat: toaster in toasters --></div>
 </div>
-<nav class="bg-canvas">
-    <iframe name="htm" src="img/bg-blue.jpg"></iframe>
+<nav class="bg-canvas" style="background:url(img/bg-blue.jpg) center center;background-size:100% 100%;">
+
 </nav>
 <section class="cont">
     <section>
@@ -195,4 +62,41 @@
         </nav>
     </section>
 </section>
+
+<div class="modal fade login" id="loginModal">
+    <div class="modal-dialog login animated">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">用户注册</h4>
+            </div>
+            <div class="modal-body">
+                <div class="box">
+                    <div class="content">
+                        <div class="social">
+                            <div align="left">
+                                <select ng-model="juese" class="form-control ng-pristine ng-untouched ng-valid ng-not-empty" ng-options="x.roleid as x.rolename for x in roles" ng-change="roleChange()" style="float: left; color: blue; width: 33%;"><option label="高管" value="number:1">高管</option><option label="部门经理" value="number:2">部门经理</option><option label="项目经理" value="number:3">项目经理</option><option label="员工" value="number:4" selected="selected">员工</option></select> <select ng-model="bumen" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-options="x.id as x.name for x in deptInfo" style="float: left; color: blue; width: 33%;" ng-show="isShowbumen"><option value="?" selected="selected"></option></select> <select ng-model="xiangmu" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-options="x.id as x.name for x in projectInfo" ng-show="isShowxiangmu" style="float: left; color: blue; width: 33%;"><option value="?" selected="selected"></option></select>
+                            </div>
+                        </div>
+                        <div class="division">
+                            <div class="line l"></div>
+                            <span>账号信息</span>
+                            <div class="line r"></div>
+                        </div>
+                        <div class="error"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content registerBox">
+                        <div class="form">
+                            <form method="post" html="{:multipart=&gt;true}" data-remote="true" action="/register" accept-charset="UTF-8" class="ng-pristine ng-valid">
+                                <input id="usernameRe" class="form-control" placeholder="用户姓名" name="username" type="text"> <input id="loginnameRe" class="form-control" onkeyup="value=value.replace(/[^\a-\z\A-\Z0-9]/g,'')" placeholder="登录名" name="loginname" type="text"> <input id="passwordRe" class="form-control" onkeyup="value=value.replace(/[^\a-\z\A-\Z0-9]/g,'')" placeholder="密码" name="password" type="password"> <input id="password_confirmationRe" class="form-control" onkeyup="value=value.replace(/[^\a-\z\A-\Z0-9]/g,'')" placeholder="重复密码" name="password_confirmation" type="password"> <input class="btn btn-default btn-register" value="注册" name="commit" ng-click="registerClick()" type="button">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body></html>

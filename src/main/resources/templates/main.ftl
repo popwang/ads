@@ -46,6 +46,9 @@
                         </div>
                     </li>
                   <li>
+                	  <a class="J_menuItem" href="view.htm"><i class="fa fa-columns"></i> <span class="nav-label" style="color:#cdd6ec;">设备总览</span></a>
+                  </li>
+                  <li>
                 	  <a class="J_menuItem" href="workbench/index.htm"><i class="fa fa-columns"></i> <span class="nav-label" style="color:#cdd6ec;">工作台</span></a>
                   </li>
                   <li>
@@ -72,7 +75,7 @@
                 </button>
                 <nav class="page-tabs J_menuTabs">
                     <div class="page-tabs-content">
-                        <a href="javascript:;" class="active J_menuTab" data-id="workbench/index.htm">工作台</a>
+                        <a href="javascript:;" class="active J_menuTab" data-id="view.htm">设备总览</a>
                     </div>
                 </nav>
                 <button class="roll-nav roll-right J_tabRight"><i class="fa fa-forward"></i>
@@ -80,55 +83,10 @@
                 <a href="quit.htm" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
             </div>
             <div class="row J_mainContent" id="content-main">
-                <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="workbench/index.htm" frameborder="0" data-id="workbench/index.htm" seamless></iframe>
+                <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="view.htm" frameborder="0" data-id="view.htm" seamless></iframe>
             </div>
         </div>
         <!--右侧部分结束-->
-        <!--右侧边栏开始-->
-        <div id="right-sidebar">
-            <div class="sidebar-container">
-                <ul class="nav nav-tabs navs-3">
-                    <li class="active">
-                        <a data-toggle="tab" href="#tab-1">
-                            <i class="fa fa-gear"></i> 主题
-                        </a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div id="tab-1" class="tab-pane active">
-                        <div class="sidebar-title">
-                            <h3> <i class="fa fa-comments-o"></i> 主题设置</h3>
-                        </div>
-                        <div class="skin-setttings">
-                            <div class="title">主题设置</div>
-                            <div class="title">皮肤选择</div>
-                            <div class="setings-item default-skin nb">
-                                <span class="skin-name ">
-                         <a href="#" class="s-skin-0">
-                             默认皮肤
-                         </a>
-                    </span>
-                            </div>
-                            <div class="setings-item blue-skin nb">
-                                <span class="skin-name ">
-                        <a href="#" class="s-skin-1">
-                            蓝色主题
-                        </a>
-                    </span>
-                            </div>
-                            <div class="setings-item yellow-skin nb">
-                                <span class="skin-name ">
-                        <a href="#" class="s-skin-3">
-                            黄色/紫色主题
-                        </a>
-                    </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--右侧边栏结束-->
     </div>
     <script src="js/jquery.min.js?v=2.1.4"></script>
     <script src="js/bootstrap.min.js?v=3.3.6"></script>
@@ -139,5 +97,4 @@
     <script type="text/javascript" src="js/contabs.min.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
 </body>
-<!-- Mirrored from www.zi-han.net/theme/hplus/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:17:11 GMT -->
 </html>
